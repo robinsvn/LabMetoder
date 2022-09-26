@@ -32,7 +32,7 @@ namespace LabMetoder
             //oppgave2
             //lag en metode som tar imot 2 tall, altså 2 parametre, som multipliserer 2 tall. Deretter kall på denne metoden. (Blir nesten det samme som metoden Addisjon)
             //Velg selv et passende navn for metoden. Metodenavn skal alltid ha stor forbokstav.
-            
+
             //oppgave 3
             //Hva er en static metode? Hva er forskjellen på det og en non static?
 
@@ -40,7 +40,16 @@ namespace LabMetoder
             //Metoder som returnerer noe
             //Lag en metode som returnerer noe. Google c# methods og return etc, for å finne en snippet
             //Kall på metoden og ta vare på verdien som blir returnert.
+            Console.WriteLine("Oppgave 1:");
+            Addisjon(1, 2);
+            Console.WriteLine("Oppgave 2:");
+            Multiplikasjon(5, 6);
+            Console.WriteLine("Oppgave 3:");
+            Console.WriteLine("I en static metode kan man ikke forandre/lage objekter og forandre på koden generellt som er i selve metoden.");
+            Console.WriteLine("Oppgave 4:");
+            Console.WriteLine(Imposter());
 
+            Console.ReadLine();
         }
 
         static void MinMetode()//denne koden kjøres kun når den blir kalt.
@@ -53,6 +62,16 @@ namespace LabMetoder
         {
             Console.WriteLine(tall1 + tall2);//her skjer utregning og utskrift av svaret
         }
-    }
+        static void Multiplikasjon(int tall1, int tall2)
+        {
+            Console.WriteLine(tall1 * tall2);//her skjer utregning og utskrift av svaret
+        }
+        static string Imposter()
+        {
+            return "You are the imposter in Among Us.";
+        }
+
+
     }
 }
+
